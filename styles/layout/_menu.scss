@@ -1,12 +1,13 @@
 .layout-sidebar {
     position: fixed;
+    // flex-direction: row-reverse;
     width: 300px;
     height: calc(100vh - 9rem);
     z-index: 999;
     overflow-y: auto;
     user-select: none;
     top: 7rem;
-    left: 2rem;
+    right: 2rem;
     transition: transform $transitionDuration, left $transitionDuration;
     background-color: var(--surface-overlay);
     border-radius: $borderRadius;

@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { useEventListener, useMountEffect, useUnmountEffect } from 'primereact/hooks';
 import React, { useContext, useEffect, useRef } from 'react';
 import { classNames } from 'primereact/utils';
@@ -123,12 +122,12 @@ const Layout = ({ children }: ChildContainerProps) => {
     });
 
     return (
-        <React.Fragment>
+        <>
             <div className={containerClass}>
-                <AppTopbar ref={topbarRef} />
-                <div ref={sidebarRef} className="layout-sidebar">
+            <div ref={sidebarRef} className="layout-sidebar">
                     <AppSidebar />
                 </div>
+                <AppTopbar ref={topbarRef} />
                 <div className="layout-main-container">
                     <div className="layout-main">{children}</div>
                     <AppFooter />
@@ -136,7 +135,7 @@ const Layout = ({ children }: ChildContainerProps) => {
                 <AppConfig />
                 <div className="layout-mask"></div>
             </div>
-        </React.Fragment>
+        </>
     );
 };
 
