@@ -22,9 +22,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <PrimeReactProvider>
                     <LayoutProvider>{children}</LayoutProvider>
                 </PrimeReactProvider>
-                <Link href={'./auth/SalespersonAuth'} className="text-3xl">
-                    ddddddddddd
-                </Link>
             </body>
         </html>
     );

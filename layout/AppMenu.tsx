@@ -16,9 +16,19 @@ const AppMenu = () => {
             items: [
                 { label: 'داشبورد', icon: 'pi pi-fw pi-home', to: '/' },
                 {
-                    label: 'Landing',
-                    icon: 'pi pi-fw pi-globe',
-                    to: '/'
+                    label: 'Timeline',
+                    icon: 'pi pi-fw pi-calendar',
+                    to: '/pages/timeline'
+                },
+                {
+                    label: 'Not Found',
+                    icon: 'pi pi-fw pi-exclamation-circle',
+                    to: '/pages/notfound'
+                },
+                {
+                    label: 'Empty',
+                    icon: 'pi pi-fw pi-circle-off',
+                    to: '/pages/empty'
                 },
                 {
                     label: 'Auth',
@@ -41,26 +51,6 @@ const AppMenu = () => {
                         }
                     ]
                 },
-                {
-                    label: 'Crud',
-                    icon: 'pi pi-fw pi-pencil',
-                    to: '/pages/crud'
-                },
-                {
-                    label: 'Timeline',
-                    icon: 'pi pi-fw pi-calendar',
-                    to: '/pages/timeline'
-                },
-                {
-                    label: 'Not Found',
-                    icon: 'pi pi-fw pi-exclamation-circle',
-                    to: '/pages/notfound'
-                },
-                {
-                    label: 'Empty',
-                    icon: 'pi pi-fw pi-circle-off',
-                    to: '/pages/empty'
-                }
             ]
         },
 
